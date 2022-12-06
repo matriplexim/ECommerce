@@ -27,8 +27,8 @@ class CartViewModel: ObservableObject {
                 case .failure(let error):
                     print(error)
                 }
-            } receiveValue: { data in
-                self.cart.append(data)
+            } receiveValue: {[weak self] data in
+                self?.cart.append(data)
             }
             .store(in: &cancellable)
 
