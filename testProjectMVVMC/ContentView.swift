@@ -9,15 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            MainView()
-                .foregroundColor(.blue)
-            ProductView()
-                .foregroundColor(.green)
-            CartView()
-                .foregroundColor(.yellow)
-        }
-        .padding()
+        MainTopPlace()
     }
 }
 

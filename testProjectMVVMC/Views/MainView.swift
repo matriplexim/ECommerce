@@ -12,11 +12,13 @@ struct MainView: View {
     @StateObject var viewModel = MainViewModel()
     
     var body: some View {
-        VStack {
-            ForEach(viewModel.homeData) { item in
-                Text(item.title)
-            }
-        }
+        MainBottomPlace(dataHomeStore: viewModel.homeStore, dataBestSeller: viewModel.bestSeller)
+//        ZStack {
+//            Color(.systemMint)
+//                .ignoresSafeArea()
+//            Text("MainView")
+//                .font(.custom("Mark-Heavy", size: 50))
+//        }
     }
 }
 

@@ -13,6 +13,7 @@ struct CartView: View {
     
     var body: some View {
         VStack {
+            Text("Cart View")
             ForEach(viewModel.cart) { item in
                 ForEach(item.basket) { basketItem in
                     Text(basketItem.title)

@@ -13,8 +13,9 @@ struct ProductView: View {
     
     var body: some View {
         VStack {
-            ForEach(viewModel.product) { item in
-                Text(item.title)
+            MainTopPlace()
+            ScrollView {
+                ComputerView()
             }
         }
     }

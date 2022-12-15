@@ -7,10 +7,10 @@
 
 import Foundation
 import Combine
-import SwiftUI
+
 class MainViewModel: ObservableObject{
-    @Published var homeData = [HomeStore]()
-    @Published var bestData = [BestSeller]()
+    @Published var homeStore = [HomeStore]()
+    @Published var bestSeller = [BestSeller]()
     
     let dataRep     = MainRepository()
     var cancellable = Set<AnyCancellable>()
@@ -18,6 +18,7 @@ class MainViewModel: ObservableObject{
     init() {
         fetchData()
     }
+    
     
     func fetchData() {
         dataRep.getData()
@@ -29,8 +30,8 @@ class MainViewModel: ObservableObject{
                     print(error)
                 }
             } receiveValue: { [weak self] value in
-                self?.bestData = value.bestSeller
-                self?.homeData = value.homeStore
+                self?.bestSeller = value.bestSeller
+                self?.homeStore = value.homeStore
             }
             .store(in: &cancellable)
     }

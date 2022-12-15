@@ -11,7 +11,7 @@ import Combine
 class CartViewModel: ObservableObject {
     @Published var cart = [Cart]()
     
-    let dataRep = CartRepository()
+    let dataRep     = CartRepository()
     var cancellable = Set<AnyCancellable>()
     
     init() {

@@ -11,7 +11,7 @@ import Combine
 class ProductViewModel: ObservableObject {
     @Published var product = [Product]()
     
-    let dataRep = ProductRepository()
+    let dataRep     = ProductRepository()
     var cancellable = Set<AnyCancellable>()
     
     init() {
