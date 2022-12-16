@@ -10,14 +10,13 @@ import SwiftUI
 struct CartView: View {
     
     @StateObject var viewModel = CartViewModel()
+    @Binding var showCart: Bool
     
     var body: some View {
         VStack {
-            Text("Cart View")
+            CartTopBar(showCart: $showCart)
             ForEach(viewModel.cart) { item in
-                ForEach(item.basket) { basketItem in
-                    Text(basketItem.title)
-                }
+                CartOptions(cartItem: item.basket, delivery: item.delivery, total: item.total)
             }
         }
     }
@@ -25,6 +24,6 @@ struct CartView: View {
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        CartView()
+        CartView(showCart: .constant(false))
     }
 }

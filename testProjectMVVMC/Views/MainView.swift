@@ -10,20 +10,16 @@ import SwiftUI
 struct MainView: View {
     
     @StateObject var viewModel = MainViewModel()
+    @Binding var showMain: Bool
+    @Binding var showProduct: Bool
     
     var body: some View {
-        MainBottomPlace(dataHomeStore: viewModel.homeStore, dataBestSeller: viewModel.bestSeller)
-//        ZStack {
-//            Color(.systemMint)
-//                .ignoresSafeArea()
-//            Text("MainView")
-//                .font(.custom("Mark-Heavy", size: 50))
-//        }
+        MainTopPlace(showProduct: $showProduct, showMain: $showMain, dataHomeStore: viewModel.homeStore, dataBestSeller: viewModel.bestSeller)
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(showMain: .constant(true), showProduct: .constant(false))
     }
 }

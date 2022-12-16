@@ -10,6 +10,10 @@ import SwiftUI
 struct MainTopPlace: View {
     @State var tabIndex = 0
     @State var showView = false
+    @Binding var showProduct: Bool
+    @Binding var showMain: Bool
+    let dataHomeStore: [HomeStore]
+    let dataBestSeller: [BestSeller]
     var body: some View {
         ZStack {
             VStack {
@@ -47,7 +51,7 @@ struct MainTopPlace: View {
                 CategoryTapBar(tabIndex: $tabIndex)
                 switch tabIndex {
                 case 0:
-                    MainView()
+                    MainBottomPlace(dataHomeStore: dataHomeStore, dataBestSeller: dataBestSeller, showMain: $showMain, showProduct: $showProduct)
                 case 1:
                     ComputerView()
                 case 2:
@@ -76,6 +80,6 @@ struct MainTopPlace: View {
 
 struct MainTopPlace_Previews: PreviewProvider {
     static var previews: some View {
-        MainTopPlace(tabIndex: 0)
+        MainTopPlace(tabIndex: 0, showView: false, showProduct: .constant(false), showMain: .constant(true), dataHomeStore: MainViewModel().homeStore, dataBestSeller: MainViewModel().bestSeller)
     }
 }
