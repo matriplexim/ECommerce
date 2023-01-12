@@ -14,6 +14,7 @@
 		F7430813294A701B0022C00C /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7430812294A701B0022C00C /* BooksView.swift */; };
 		F7430815294A70350022C00C /* SomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7430814294A70350022C00C /* SomethingView.swift */; };
 		F7430817294A708A0022C00C /* NotFoundCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7430816294A708A0022C00C /* NotFoundCategory.swift */; };
+		F7476C21297044B800947DEC /* ReverseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7476C20297044B800947DEC /* ReverseView.swift */; };
 		F759B0612947697E00E82C05 /* MainFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759B0602947697E00E82C05 /* MainFilter.swift */; };
 		F759FC29293B954C00BEB7A3 /* testProjectMVVMCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759FC28293B954C00BEB7A3 /* testProjectMVVMCApp.swift */; };
 		F759FC2B293B954C00BEB7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F759FC2A293B954C00BEB7A3 /* ContentView.swift */; };
@@ -86,6 +87,7 @@
 		F7430812294A701B0022C00C /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		F7430814294A70350022C00C /* SomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingView.swift; sourceTree = "<group>"; };
 		F7430816294A708A0022C00C /* NotFoundCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundCategory.swift; sourceTree = "<group>"; };
+		F7476C20297044B800947DEC /* ReverseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseView.swift; sourceTree = "<group>"; };
 		F759B0602947697E00E82C05 /* MainFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFilter.swift; sourceTree = "<group>"; };
 		F759FC25293B954C00BEB7A3 /* testProjectMVVMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProjectMVVMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F759FC28293B954C00BEB7A3 /* testProjectMVVMCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testProjectMVVMCApp.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				F7A5C22A293C895A00C2B44E /* MainView.swift */,
 				F78C4F7D293FDFDA00C22C70 /* ProductView.swift */,
 				F78C4F8B293FEB5600C22C70 /* CartView.swift */,
+				F7476C20297044B800947DEC /* ReverseView.swift */,
 				F7B97F4C2946530000B844EB /* MainSubviews */,
 				F7E83BE1294CDCEB00337D56 /* ProductSubviews */,
 				F7E83BF0294D0B5400337D56 /* CartSubviews */,
@@ -481,6 +484,7 @@
 				F78C4F80293FDFEB00C22C70 /* ProductViewModel.swift in Sources */,
 				F7430817294A708A0022C00C /* NotFoundCategory.swift in Sources */,
 				F78C4F8A293FEA6F00C22C70 /* CartViewModel.swift in Sources */,
+				F7476C21297044B800947DEC /* ReverseView.swift in Sources */,
 				F7E83BE7294CE48700337D56 /* ProductGeoView.swift in Sources */,
 				F759FC2B293B954C00BEB7A3 /* ContentView.swift in Sources */,
 				F759B0612947697E00E82C05 /* MainFilter.swift in Sources */,
